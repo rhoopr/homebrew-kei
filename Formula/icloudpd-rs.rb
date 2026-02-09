@@ -1,26 +1,26 @@
 class IcloudpdRs < Formula
   desc "Fast, reliable iCloud Photos downloader written in Rust"
   homepage "https://github.com/rhoopr/icloudpd-rs"
-  version "0.1.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rhoopr/icloudpd-rs/releases/download/v0.1.1/icloudpd-rs-macos-aarch64.tar.gz"
-      sha256 "a7deedeb4efb76bbdff4697c8dfb72044878c799133335c7f0aac9d51688a432"
+      url "https://github.com/rhoopr/icloudpd-rs/releases/download/v#{version}/icloudpd-rs-macos-aarch64.tar.gz"
+      sha256 "ff88c31d218b78ca6d2d628b4dd6509c1d2684bcb66878a36c3089a5679c70fa"
     else
       url "https://github.com/rhoopr/icloudpd-rs/releases/download/v#{version}/icloudpd-rs-macos-x86_64.tar.gz"
-      sha256 "e0553b00d040e571af2601057fa84c26c6dde33f6b522e8db91f6c786f28332f"
+      sha256 "241d2e9822e2167a3e4fd968b3c30559d0ff71ecf925c9b2b74ebce1a8b9e580"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/rhoopr/icloudpd-rs/releases/download/v#{version}/icloudpd-rs-linux-aarch64.tar.gz"
-      sha256 "438972ed98dfb20fdb3a8b88e903e70512616fdac2b1de1ebc8372a1f0c89fd3"
+      sha256 "0ceb55dab745486bf3329b078876244048b30ad001cc8e6db338cf988837e88a"
     else
       url "https://github.com/rhoopr/icloudpd-rs/releases/download/v#{version}/icloudpd-rs-linux-x86_64.tar.gz"
-      sha256 "dbb274ad0b7154f038a8d36e3daaffe49f8148cad1f3a09b22a90fd006138016"
+      sha256 "674edd4bd6e8e05e419dd0c7b19db210f59a9c81ae5765341b4d7db96dd6a44d"
     end
   end
 
