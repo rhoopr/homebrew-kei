@@ -1,13 +1,13 @@
 class Kei < Formula
   desc "Photo sync engine - compact, efficient, reliable"
   homepage "https://github.com/rhoopr/kei"
-  version "0.4.2"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rhoopr/kei/releases/download/v0.4.2/icloudpd-rs-macos-aarch64.tar.gz"
-      sha256 "be5b0596092baeeb6c01d3c5570b73fad71facdc9ddee941a330e7bc96cc9c21"
+      url "https://github.com/rhoopr/kei/releases/download/v0.5.0/kei-macos-aarch64.tar.gz"
+      sha256 "c62e41bf50059c4f38486210ffcdb0b25decab11de364fcf1faebb7fa18b657c"
     else
       url "https://github.com/rhoopr/kei/releases/download/v#{version}/icloudpd-rs-macos-x86_64.tar.gz"
       sha256 "241d2e9822e2167a3e4fd968b3c30559d0ff71ecf925c9b2b74ebce1a8b9e580"
