@@ -1,33 +1,24 @@
-# homebrew-icloudpd-rs
+# homebrew-kei
 
-Homebrew tap for [icloudpd-rs](https://github.com/rhoopr/icloudpd-rs).
+Homebrew tap for [kei](https://github.com/rhoopr/kei) — a photo sync engine.
 
-## Installation
+## Install
 
 ```bash
-brew tap rhoopr/icloudpd-rs
-brew install icloudpd-rs
+brew install rhoopr/kei/kei
 ```
 
-## Updating
+## Update
 
 ```bash
 brew update
-brew upgrade icloudpd-rs
+brew upgrade kei
 ```
 
-## From Source
-
-If you prefer to build from source:
+## Migrating from icloudpd-rs
 
 ```bash
-brew install --HEAD icloudpd-rs
-```
-
-Or manually:
-
-```bash
-git clone https://github.com/rhoopr/icloudpd-rs.git
-cd icloudpd-rs
-cargo build --release
+brew uninstall icloudpd-rs
+brew untap rhoopr/icloudpd-rs
+brew install rhoopr/kei/kei
 ```

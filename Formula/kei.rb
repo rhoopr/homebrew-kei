@@ -6,7 +6,7 @@ class Kei < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rhoopr/kei/releases/download/v0.5.3/kei-macos-aarch64.tar.gz"
+      url "https://github.com/rhoopr/kei/releases/download/v#{version}/kei-macos-aarch64.tar.gz"
       sha256 "d38746871117befb5e3e240e95e4956f90d0981da7945815a5938fce3f69d9b8"
     else
       url "https://github.com/rhoopr/kei/releases/download/v#{version}/kei-macos-x86_64.tar.gz"
@@ -29,6 +29,7 @@ class Kei < Formula
   end
 
   test do
+    assert_match version.to_s, shell_output("#{bin}/kei --version")
     assert_match "kei", shell_output("#{bin}/kei --help")
   end
 end
