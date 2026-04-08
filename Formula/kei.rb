@@ -6,7 +6,7 @@ class Kei < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rhoopr/kei/releases/download/v0.6.0/kei-macos-aarch64.tar.gz"
+      url "https://github.com/rhoopr/kei/releases/download/v#{version}/kei-macos-aarch64.tar.gz"
       sha256 "314efd33d2d2da509fde1f1a12d98f49227e81a51479cad02fc9501925072547"
     else
       url "https://github.com/rhoopr/kei/releases/download/v#{version}/kei-macos-x86_64.tar.gz"
