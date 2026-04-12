@@ -1,26 +1,26 @@
 class Kei < Formula
   desc "Photo sync engine - compact, efficient, reliable"
   homepage "https://github.com/rhoopr/kei"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rhoopr/kei/releases/download/v0.7.0/kei-macos-aarch64.tar.gz"
-      sha256 "dd1c07f2bef63b4cc084d4e0b07fa0c30b4e0372a547d28c50c9169bea8c5de6"
+      url "https://github.com/rhoopr/kei/releases/download/v0.7.1/kei-macos-aarch64.tar.gz"
+      sha256 "d2b2d7a1daca4dfc09b3177edf40943bde491737e2e2a8a36dd45ef01452771c"
     else
-      url "https://github.com/rhoopr/kei/releases/download/v0.7.0/kei-macos-x86_64.tar.gz"
-      sha256 "1e51eb1f6f804f98ddae176fa4fcab12656548232c175d8d3886638b0ae00ff6"
+      url "https://github.com/rhoopr/kei/releases/download/v0.7.1/kei-macos-x86_64.tar.gz"
+      sha256 "94baa2b7701299ef5b3a3d2ebc9ee4336ae189abbb88e086cf73eda85ae3aded"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/rhoopr/kei/releases/download/v0.7.0/kei-linux-aarch64.tar.gz"
-      sha256 "748f0f4206886832bd6784658f2d9ac4d066bc8707ac9893ddf553c947e43ded"
+      url "https://github.com/rhoopr/kei/releases/download/v0.7.1/kei-linux-aarch64.tar.gz"
+      sha256 "eaf1950da1e436d358786c838384de1bc9ff87a9048e5f81766f008c10c43727"
     else
-      url "https://github.com/rhoopr/kei/releases/download/v0.7.0/kei-linux-x86_64.tar.gz"
-      sha256 "73a61c27ce51e5db622be9ef2d90d1c238a55eb625345f0fb39328b27f5a9977"
+      url "https://github.com/rhoopr/kei/releases/download/v0.7.1/kei-linux-x86_64.tar.gz"
+      sha256 "546b0e131abb2c3a510c1ddd8324b5fabd60fe0cdb08725e14bd147e4b1568c0"
     end
   end
 
